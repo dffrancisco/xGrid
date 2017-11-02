@@ -46,15 +46,15 @@ var xGrid = new xGrid({
 ```
 
 **height**
-``` 
+```javascript
 Type: px
 Default: 100%
-```
-```javascript
+
+
 var xGrid = new xGrid({
           height: 300
 });
-
+```
 
 
 
