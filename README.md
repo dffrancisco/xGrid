@@ -1,4 +1,7 @@
 # xGrid
+> @author Francisco Alves
+> version **3.2**
+
 > xGrid is a tool inspired by Delphi dbgrid, it facilitates web application development.
 
 ![](xgrid.png)
@@ -27,4 +30,33 @@ var xGrid = new xGrid({
 });
 ```
 
-## ** API ** ##
+## API ##
+
+## Options
+>-------------------------------------------
+**width**
+```
+Type: px
+Default: 100%
+```
+```javascript
+var xGrid = new xGrid({
+          width: 300
+});
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
+```javascript
+```
