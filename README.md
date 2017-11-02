@@ -97,3 +97,20 @@ xGrid.focus();
 or
 xGrid.focus(5);
 ```
+
+**focusFirstRow**
+- select the first line
+- seleciona a primeira linha
+```javascript
+focusFirstRow.focus();
+```
+**focusField**
+>Type:strintg, parameter not required
+**requirement: sideBySide**
+- focuses on the first 'input' field. Note the sideBySide must be enabled. To focus on another field just pass the name
+- foca no primeiro campo 'input'. Obs o 'sideBySide' tem que estar abilitado. Para focar em outro campo basta passar o nome 
+```javascript
+focusField.focus();
+```
+
+
