@@ -69,3 +69,13 @@ var xGrid = new xGrid({
           theme: 'x-blue'
 });
 ```
+
+**count**
+>Type: Boolean; Default: false;
+- when true shows a column with a counter
+- quando true mostra uma coluna com um contador
+```javascript
+var xGrid = new xGrid({
+          count: true
+});
+```
