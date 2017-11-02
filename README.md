@@ -45,6 +45,8 @@ var xGrid = new xGrid({
 
 **heightLine**
 >Type: px; Default: 30;
+- line height
+- altura da linha
 ```javascript
 var xGrid = new xGrid({
           heightLine: 50
@@ -78,4 +80,20 @@ var xGrid = new xGrid({
 var xGrid = new xGrid({
           count: true
 });
+```
+
+
+## Methods
+>-------------------------------------------
+
+**focus**
+>Type:int, parameter not required
+- focuses on the last line selected, or the first.
+- parameter select the desired line
+- foca a última linha selecionada, ou a primeira.
+- parametro selecionar a linha desejada
+```javascript
+xGrid.focus();
+or
+xGrid.focus(5);
 ```
