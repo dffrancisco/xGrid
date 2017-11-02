@@ -8,12 +8,13 @@
     <link href="../../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <link href="index.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/xGrid3.1.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/xGrid_base.css" rel="stylesheet" type="text/css"/>
     <link href="../css/x-mod1.css" rel="stylesheet" type="text/css"/>
     <link href="../css/x-blue-lith.css" rel="stylesheet" type="text/css"/>
     <link href="../css/x-blue.css" rel="stylesheet" type="text/css"/>
     <link href="../css/x-table.css" rel="stylesheet" type="text/css"/>
-
+    
+    <script src="../countries.js" type="text/javascript"></script>
     <script src="../xGrid.js" type="text/javascript"></script>
 
   </head>
@@ -105,7 +106,8 @@
         {name: 'Kalline Rocha', login: 'Kalline', cpf: '1111', old: 11, tel: '787-995', qto: 11, cidade: 'Gura'},
         {name: 'Francisco Alves', login: 'Francisco', cpf: '778.583.951-48', old: 37, tel: '999-999', qto: 7, cidade: 'Brasilia'}
       ];
-      $('.lat a').click(function () {
+      
+    $('.lat a').click(function () {
         $('.grid').css('display', 'none');
         var loc = $(this).attr('href');
         $('#' + loc).css('display', 'block');
@@ -122,7 +124,7 @@
         id: '#xGridSimples .xgrid'
       });
       
-      xGridSimples.create(json);
+      xGridSimples.create(countries);
       /***********************************************************************/
 
       var xGridSideBySide = new xGrid({
