@@ -34,19 +34,20 @@ var xGrid = new xGrid({
 
 ## Options
 >-------------------------------------------
-**width**
+**width and height**
 >Type: px; Default: 100%
 ```javascript
 var xGrid = new xGrid({
-          width: 300
+          width: 300,
+          height: 300
 });
 ```
 
-**height**
->Type: px; Default: 100%;
+**heightLine**
+>Type: px; Default: 30;
 ```javascript
 var xGrid = new xGrid({
-          height: 300
+          heightLine: 50
 });
 ```
 
