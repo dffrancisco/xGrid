@@ -1,5 +1,5 @@
 var xGrid = function (param) {
-    var version = 3.2;
+    const version = 3.2;
     var element;
     var elementSideBySide;
     var argDefalt = {
@@ -444,7 +444,7 @@ var xGrid = function (param) {
 
     /**
      * 
-     * @description passando o name do field ele foca no field com o name. Ou sem argumento foco no primeirio field do sideBySide
+     * @description passando o name do field ele foca no field com o name. Ou sem argumento foco no primeiro field do sideBySide
      */
     this.focusField = function (name) {
 
