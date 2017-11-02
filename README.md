@@ -9,13 +9,14 @@
 ## Installation
 
 ```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
 <link href="css/xGrid_base.css" rel="stylesheet" type="text/css"/>
 <script src="xGrid.js" type="text/javascript"></script>
 ```
 
 **optional for example only**
 ```html
-<script src="../countries.js" type="text/javascript"></script>
+<script src="countries.js" type="text/javascript"></script>
 ```
 
 ## Usage simples
