@@ -37,11 +37,12 @@ var xGrid = function (param) {
     var controlFocus = false;
     var focusFieldObj = {};
     var abortAjax = null;
+
+    this.version = version;
+
     this.create = function (data) {
         create(data);
     };
-
-    this.version = version;
 
     function create(data) {
         $(function () {
@@ -263,7 +264,6 @@ var xGrid = function (param) {
      * set any values <br> grid.dataSource({nome:'alves', tel:'11114545'});
      * @returns grid.dataSource() return objeto
      */
-
     this.dataSource = function (field, value) {
 
         if (typeof field === 'string') {
@@ -329,6 +329,7 @@ var xGrid = function (param) {
         else
             return lineDataSource;
     };
+
     /**
      *
      * @param {type} param {name:'alves', qto:5} or<br> [{name:'alves', qto:5}, {name:'Xico', qto:55}]
