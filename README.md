@@ -35,7 +35,7 @@ var xGrid = new xGrid({
 ## Options
 >-------------------------------------------
 **width**
-```
+``` 
 Type: px
 Default: 100%
 ```
@@ -44,6 +44,21 @@ var xGrid = new xGrid({
           width: 300
 });
 ```
+
+**height**
+``` 
+Type: px
+Default: 100%
+```
+```javascript
+var xGrid = new xGrid({
+          height: 300
+});
+
+
+
+
+
 ```javascript
 ```
 ```javascript
