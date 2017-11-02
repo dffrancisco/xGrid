@@ -29,6 +29,11 @@ var xGrid = new xGrid({
           id:'#pnGrid',
           height: 300
 });
+
+
+xGrid.create(countries);
+
+
 ```
 
 ## API ##
