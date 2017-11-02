@@ -51,22 +51,21 @@ var xGrid = new xGrid({
 });
 ```
 
-
-
-
+**lineFocus**
+>Type: int; Default: null;
+- when the json is loaded the line is selected
+- ao finalizar o carregamento do json a linha é selecionada
 ```javascript
+var xGrid = new xGrid({
+          lineFocus: 50
+});
 ```
+**theme**
+>Type: string; Default: x-gray;
+- changes the layout of the xGrid completely. It is necessary to load the css referring to thema
+- muda completamente o layout da xGrid. É necessario carregar o css referente ao thema
 ```javascript
-```
-```javascript
-```
-```javascript
-```
-```javascript
-```
-```javascript
-```
-```javascript
-```
-```javascript
+var xGrid = new xGrid({
+          theme: 'x-blue'
+});
 ```
