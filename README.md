@@ -102,15 +102,72 @@ xGrid.focus(5);
 - select the first line
 - seleciona a primeira linha
 ```javascript
-focusFirstRow.focus();
+xGrid.focusFirstRow();
 ```
+
+
 **focusField**
 >Type:strintg, parameter not required
 **requirement: sideBySide**
 - focuses on the first 'input' field. Note the sideBySide must be enabled. To focus on another field just pass the name
 - foca no primeiro campo 'input'. Obs o 'sideBySide' tem que estar abilitado. Para focar em outro campo basta passar o nome 
 ```javascript
-focusField.focus();
+xGrid.focusField();
+or
+xGrid.focusField('name_of_field_input');
 ```
 
+**getIndex**
+- returns the index of the selected row
+- retorna o índex da linha selecionada
+```javascript
+xGrid.getIndex();
+```
 
+**deleteLine**
+- delete selected row
+- deleta linha selecionada
+```javascript
+xGrid.deleteLine();
+```
+
+**clearGrid**
+- clears the xGrid data
+- limpa os dados da xGrid
+```javascript
+xGrid.clearGrid();
+```
+
+**disable**
+- Disables Grid
+- desabilita a Grid
+```javascript
+xGrid.disable();
+```
+
+**enable**
+- enable Grid
+- habilita a Grid
+```javascript
+xGrid.enable();
+```
+
+**load**
+>Type:string; Default: 'Carregando'; parameter not required
+```javascript
+xGrid.load();
+```
+
+**closeLoad**
+- hide the load
+- fecha o load
+```javascript
+xGrid.load();
+```
+
+**refresh**
+- reloads xGrid data
+- recarrega os dados da xGrid
+```javascript
+xGrid.refresh();
+```
