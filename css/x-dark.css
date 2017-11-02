@@ -1,0 +1,95 @@
+/* 
+    Created on : 20/11/2016, 20:49:40
+    Author     : alves
+*/
+
+/*--------------------x-dark--------------------------------------*/
+.x-dark{
+    color: #eceff1;
+    /*border: 1px solid #b9c5ce;*/
+    border-radius: 0px;
+    /*font-size: 10px;*/
+    /*font: normal 12px/150% Arial, Helvetica, sans-serif;*/
+    /*box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);*/
+}
+/* alinhamento do titulo*/
+.x-dark .xGrid-title .xGrid-col span{
+    text-align: center;
+}
+
+/* color titulo */
+.x-dark .xGrid-title{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;     
+    border-bottom: 1px solid #546e7a;
+    color: #b0bec5;    
+    /*font-weight: bold;*/
+    background:#37474f;
+    /*height: 24px;*/
+    font-size: 10px;
+}
+/* borda do titulo*/
+.x-dark .xGrid-title .xGrid-col{
+    border-right: 1px solid #455a64;
+}
+
+.x-dark .xGrid-content{
+/*    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;*/
+    /*background: linear-gradient(45deg, #49a09d, #5f2c82);*/
+    /*opacity: 0.5;*/
+    background: #455a64;
+    
+}
+.x-dark .xGrid-content .xGrid-col{
+    border-right: 1px solid #546e7a;
+}
+.x-dark .xGrid-content .xGrid-row{
+    border-bottom: 1px solid #546e7a;
+    /*background-color: #ffffff;*/
+    height: 30px;
+    /*font-weight: bold;*/
+}
+.x-dark .xGrid-content .xGrid-row:nth-child(odd){
+    /*background-color: #455a69;*/
+}
+
+.x-dark .xGrid-Selected{
+    /*background: #2c8ac4 !important;*/
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0086C9), color-stop(1, #006CA1) );*/
+    background-color:#263238;
+    /*background-color: rgba(255,255,255,0.2);*/
+    
+    /*color:#ffffff !important;*/
+    outline: 0;
+
+}
+
+.x-dark .xGrid-SelectedFocusOut{
+  background: #37474f !important;
+}
+
+/*****scrollbar*****/
+
+.x-dark .xGrid-content::-webkit-scrollbar {
+    width: 13px;
+}
+
+.xGrid-main .xGrid-title{
+  padding-right: 13px;
+}
+
+/* Cor do indicador de rolagem */
+.x-dark .xGrid-content::-webkit-scrollbar-thumb:vertical,
+.x-dark .xGrid-content::-webkit-scrollbar-thumb:horizontal {
+    background: #37474f;
+    border: 1px solid #37474f;
+    /*border-radius: 5px;*/
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+.x-dark .xGrid-content::-webkit-scrollbar-thumb:vertical:hover,
+.x-dark .xGrid-content::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #455a64
+}
+

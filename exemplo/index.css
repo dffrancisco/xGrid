@@ -1,0 +1,59 @@
+      *{
+        margin:0;
+        padding:0;
+      }
+
+      body{
+        min-height:500px;
+        font: 12px "Monaco", Inconsolata, monospace;
+        background:#083952;
+        /*background: -moz-linear-gradient(314deg, rgba(8,57,82,1) 0%, rgba(12,87,125,1) 100%);  ff3.6+ */
+        /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(8,57,82,1)), color-stop(100%, rgba(12,87,125,1)));  safari4+,chrome */
+        /*background: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(16, 47, 70, 0.26)), -webkit-linear-gradient(108deg, #26d0ce, #1a2980 90%);*/
+
+        color: #f8f8f8;
+      }
+
+      .lat{
+        width: 20%; 
+        height: 100%; 
+
+        background: #5ab;
+        background: linear-gradient(45deg, #3a9E98 25%, #3aa09b 25%, #3aa09b 50%, #3a9E98 50%, #3a9E98 75%, #3aa09b 75%, #3aa09b);
+        background-size: 100px 100px;
+
+        padding: 10px;
+        position: absolute;          
+      }
+      .lat label{
+        font-size: 16px;
+        padding-left: 90px;
+        content:"";
+        display:block;
+        clear:both;
+      }
+      .lat a{
+        content:"";
+        display:block;
+        clear:both;
+        text-decoration:none;
+        outline:none;
+        color: #033756;
+      }
+
+      .cont{
+        width: 73%; 
+        height: 100%; 
+        left: 24%;
+        padding: 10px;
+        position: absolute;          
+      }
+
+      .codigo{
+        margin: 10px 0 10px;
+        padding: 5px;
+        background: #1d1d1d;
+        border: 1px solid #000000;
+        min-height: 20px;
+        color: #2abe00;
+      }

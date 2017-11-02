@@ -1,0 +1,81 @@
+/* 
+    Created on : 20/11/2016, 20:49:40
+    Author     : alves
+*/
+
+/*--------------------x-mod1--------------------------------------*/
+.x-mod1{
+    color: #ffffff;
+    border: 1px solid #b9c5ce;
+    border-radius: 0px;
+    /*font-size: 10px;*/
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+}
+/* alinhamento do titulo*/
+.x-mod1 .xGrid-title .xGrid-col span{
+    text-align: center;
+}
+
+/* color titulo */
+.x-mod1 .xGrid-title{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;     
+    border-bottom: 1px solid #b9c5ce;
+    color: #566579;    
+    font-weight: bold;
+    background:#ebf1f5;
+}
+/* borda do titulo*/
+.x-mod1 .xGrid-title .xGrid-col{
+    /*border-right: 1px solid #b9c5ce;*/
+}
+
+.x-mod1 .xGrid-content{
+/*    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;*/
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    /*opacity: 0.5;*/
+    
+}
+.x-mod1 .xGrid-content .xGrid-col{
+    /*border-right: 1px solid #b9c5ce;*/
+}
+.x-mod1 .xGrid-content .xGrid-row{
+    /*border-bottom: 1px solid #b9c5ce;*/
+    /*background-color: #ffffff;*/
+    /*height: 30px;*/
+    /*font-weight: bold;*/
+}
+.x-mod1 .xGrid-content .xGrid-row:nth-child(odd){
+    /*background-color: #f6f9fc;*/
+}
+
+.x-mod1 .xGrid-Selected{
+    /*background: #2c8ac4 !important;*/
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0086C9), color-stop(1, #006CA1) );*/
+    /*border-color:#014ab8;*/
+    background-color: rgba(255,255,255,0.3);
+    /*color:#ffffff !important;*/
+    outline: 0;
+}
+
+/*****scrollbar*****/
+
+.x-mod1 .xGrid-content::-webkit-scrollbar {
+    width: 17px;
+}
+
+/* Cor do indicador de rolagem */
+.x-mod1 .xGrid-content::-webkit-scrollbar-thumb:vertical,
+.x-mod1 .xGrid-content::-webkit-scrollbar-thumb:horizontal {
+    background: #d9e1e7;
+    border: 1px solid #bbccdd;
+    /*border-radius: 5px;*/
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+.x-mod1 .xGrid-content::-webkit-scrollbar-thumb:vertical:hover,
+.x-mod1 .xGrid-content::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #cdddec
+}
+

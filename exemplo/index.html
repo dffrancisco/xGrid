@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <link href="../../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/xGrid3.1.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/x-mod1.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/x-blue-lith.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/x-blue.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/x-table.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../xGrid.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+
+    <div class="lat">
+      <label>xGrid 3.0</label>
+      <a href="xGridSimples">xGrid Simples</a>
+      <a href="xGridSideBySide">xGrid SideBySide</a>
+      <a href="xGridSideBySideFrame">xGrid SideBySideFrame</a>
+      <a href="gridQuery">xGrid Query</a>
+    </div>
+
+    <div class="cont">
+
+
+      <div id="xGridSimples" class="grid" style="display: none">
+        <div class="xgrid"></div>
+        <div class="codigo">
+          var xGridSimples = new xGrid({
+          id:'#xGridSimples .xgrid'
+          });
+          xGridSimples.create(json);
+        </div>
+      </div>
+
+      <div id="xGridSideBySide" class="grid" style="display: none">
+        <div class="fields">
+          <input type="text" name="name"/>
+          <input type="text" name="tel"/>
+          <input type="text" name="old"/>
+        </div>
+        <div class="xgrid"></div>
+        <div class="codigo">
+          var xGridSideBySide = new xGrid({
+          id: '#xGridSideBySide .xgrid',
+          columns: {
+          'nome': {dataField: 'name', width: '50%'},
+          'tel': {dataField: 'tel', width: '25%'},
+          'old': {dataField: 'old', width: '25%'}
+          },
+          sideBySide:{
+          id: '#xGridSideBySide .fields'
+          }
+          });
+
+          xGridSideBySide.create(json);
+        </div>
+      </div>
+
+
+
+      <div id="xGridSideBySideFrame" class="grid" style="display: block;">
+
+        <div class="fields">
+          <span>Login</span>
+          <input type="text" name="login"/>
+          <span>CPF</span>
+          <input type="text" name="cpf"/>
+          <textarea name="old" style="display: none" >aaa</textarea>
+        </div>
+
+        <div class="xgrid"></div>
+        <div class="frame" style="text-align: center" ></div>
+
+        <div class="codigo"></div>
+
+      </div>
+
+
+      <div id="gridQuery" class="grid" style="display: none">
+        <div class="xgrid"></div>
+        <div class="codigo">
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <script>
+
+      var json = [
+        {name: 'Meire Clecia', login: 'Meire <br>Legal', cpf: '222', old: 40, tel: '845-453', qto: 13, cidade: 'SIA'},
+        {name: 'Kallebe Alves', login: 'Kallebe', cpf: '654654', old: 16, tel: '888-345', qto: 98, cidade: 'Recando da Emas'},
+        {name: 'Alves Xico', login: 'Alves', cpf: '11577', old: 37, tel: '466-664', qto: 8, cidade: 'Taguatinga'},
+        {name: 'Sousa Alves', login: 'Sousa', cpf: '874465', old: 22, tel: '858-999', qto: 21, cidade: 'Setor O'},
+        {name: 'Kalline Rocha', login: 'Kalline', cpf: '1111', old: 11, tel: '787-995', qto: 11, cidade: 'Gura'},
+        {name: 'Francisco Alves', login: 'Francisco', cpf: '778.583.951-48', old: 37, tel: '999-999', qto: 7, cidade: 'Brasilia'}
+      ];
+      $('.lat a').click(function () {
+        $('.grid').css('display', 'none');
+        var loc = $(this).attr('href');
+        $('#' + loc).css('display', 'block');
+        return false;
+      });
+      
+      $.ajaxSetup({
+        url: 'data.php',
+        type: 'POST',
+        dataType: 'json'
+      });
+      
+      var xGridSimples = new xGrid({
+        id: '#xGridSimples .xgrid'
+      });
+      
+      xGridSimples.create(json);
+      /***********************************************************************/
+
+      var xGridSideBySide = new xGrid({
+        id: '#xGridSideBySide .xgrid',
+        columns: {
+          'nome': {dataField: 'name', width: '50%'},
+          'tel': {dataField: 'tel', width: '25%'},
+          'old': {dataField: 'old', width: '25%'}
+        },
+        sideBySide: {
+          id: '#xGridSideBySide .fields'
+        }
+      });
+      xGridSideBySide.create(json);
+      /*************************************************************************/
+
+      var qto = 1;
+      function contador() {
+        return qto++;
+      }
+      var xGridSideBySideFrame = new xGrid({
+        id: '#xGridSideBySideFrame .xgrid',
+        count: true,
+//        theme: 'x-mod1',
+        columns: {
+          //'&nbsp;': {render: contador, width: '2%'},
+          'Login': {dataField: 'login'},
+          'Cpf': {dataField: 'cpf', width: '50%'},
+          'old': {dataField: 'old', width: '10%'}
+        },
+        sideBySide: {
+          id: '#xGridSideBySideFrame .fields',
+
+          frame: {
+            id: '#xGridSideBySideFrame .frame',
+            btnCancel: function () {
+              xGridSideBySideFrame.focus();
+            },
+            btnInsert: function () {
+              console.log('nao pode insert');
+              //return false;
+            },
+            btnEdit: function () {
+              if (!xGridSideBySideFrame.dataSource()) {
+                alert('selecione um registro para alterar');
+                return false;
+              }
+            },
+            btnDelete: function () {
+              if (!xGridSideBySideFrame.dataSource()) {
+                alert('selecione um registro para excluir');
+                return false;
+              }
+            },
+            btnSave: function () {
+              if (xGridSideBySideFrame.getDuplicityAll())
+                return false;
+              var diff = xGridSideBySideFrame.differenceTwoObject();
+            },
+            btnPrint: function () {},
+            btnPDF: function () {}
+          },
+          duplicity: {
+            url: 'duplicity.php',
+            table: 'funcionario',
+            dataField: ['login', 'cpf']
+          }
+
+        }
+
+      });
+      xGridSideBySideFrame.create(json);
+      /**********************************************************************/
+
+      var qtoX = 1;
+      function contadorX() {
+        return qtoX++;
+      }
+      var xGridQuery = new xGrid({
+        id: "#gridQuery .xgrid",
+        height: 300,
+        count: true,
+        theme: 'x-blue',
+        columns: {
+          'Nº Fabricante': {dataField: 'NUM_FABRICANTE', width: '8%'},
+          'Descrição Produto': {dataField: 'DESC_PRODUTO'},
+          'Qto': {dataField: 'QUANTIDADE', width: '7%', style: 'text-align:center'},
+          'Valor': {dataField: 'VENDA', width: '8%', style: 'text-align:right'}
+        },
+        query: {
+          param: {
+            maxItem: 55
+          }
+        },
+        keyDown: {
+          'F1': {
+            key: 112,
+            call: function (r) {
+              console.log(r);
+            }
+          }
+        }
+      });
+//      xGridQuery.create();
+    //  xGridQuery.load();
+    //  xGridQuery.search({NUM_FABRICANTE: '01%', DESC: '%FAROL%'});
+      //      $(".xGrid-content").animate({scrollTop: 0}, "slow");
+
+
+    </script>
+  </body>
+</html>
