@@ -33,7 +33,6 @@ var xGrid = new xGrid({
 
 xGrid.create(countries);
 
-
 ```
 
 ## API ##
