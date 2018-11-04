@@ -1,6 +1,6 @@
 # xGrid
 > @author Francisco Alves
-> version **3.2**
+> version **3.4**
 
 > xGrid is a tool inspired by Delphi dbgrid, it facilitates web application development.
 
