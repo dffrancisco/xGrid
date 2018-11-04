@@ -1,0 +1,75 @@
+/*--------------------x-blue---------------------------------------*/
+
+
+.x-blue{
+  color: #00557F;
+  border: 1px solid #006699;
+  border-radius: 3px;
+  /*font-size: 10px;*/
+  font: normal 12px/150% Arial, Helvetica, sans-serif;
+}
+/* alinhamento do titulo*/
+.x-blue .xGrid-title .xGrid-col span{
+  text-align: center;
+}
+
+/* color titulo */
+.x-blue .xGrid-title{
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;     
+  border-bottom: 1px solid #006699;
+  color: #FFFFFF;     
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) )
+}
+/* borda do titulo*/
+.x-blue .xGrid-title .xGrid-col{
+  border-right: 1px solid #E1EEf4;
+}
+
+.x-blue .xGrid-content{
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: #ebf1f5;
+}
+.x-blue .xGrid-content .xGrid-col{
+  border-right: 1px solid #E1EEf4;
+}
+.x-blue .xGrid-content .xGrid-row{
+  border-bottom: 1px solid #E1EEf4;
+  background-color: #ffffff;
+  height: 30px;
+  font-weight: bold;
+  transition: background-color 0.25s ease;
+
+}
+.x-blue .xGrid-content .xGrid-row:nth-child(odd){
+  background-color: #E1EEf4;
+}
+
+.x-blue .xGrid-Selected{
+  background: #058cf5;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0086C9), color-stop(1, #006CA1) );
+  /*border-color:#014ab8;*/
+  color:#ffffff !important;
+  outline: 0;
+}
+
+/*****scrollbar*****/
+
+.x-blue .xGrid-content::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Cor do indicador de rolagem */
+.x-blue .xGrid-content::-webkit-scrollbar-thumb:vertical,
+.x-blue .xGrid-content::-webkit-scrollbar-thumb:horizontal {
+  background: #006699;
+  border: 1px solid #e1eef4;
+  border-radius: 3px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+.x-blue .xGrid-content::-webkit-scrollbar-thumb:vertical:hover,
+.x-blue .xGrid-content::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #0174ad
+}

@@ -1,0 +1,73 @@
+/*--------------------x-blue-lith---------------------------------------*/
+.x-blue-lith{
+  color: #566579;
+  border: 1px solid #b9c5ce;
+  border-radius: 0px;
+  /*font-size: 10px;*/
+  font: normal 12px/150% Arial, Helvetica, sans-serif;
+}
+/* alinhamento do titulo*/
+.x-blue-lith .xGrid-title .xGrid-col span{
+  text-align: center;
+}
+
+/* color titulo */
+.x-blue-lith .xGrid-title{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;     
+  border-bottom: 1px solid #b9c5ce;
+  color: #566579;    
+  font-weight: bold;
+  background:#ebf1f5;
+}
+/* borda do titulo*/
+.x-blue-lith .xGrid-title .xGrid-col{
+  border-right: 1px solid #b9c5ce;
+}
+
+.x-blue-lith .xGrid-content{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #f6f9fc;
+}
+.x-blue-lith .xGrid-content .xGrid-col{
+  border-right: 1px solid #b9c5ce;
+}
+.x-blue-lith .xGrid-content .xGrid-row{
+  border-bottom: 1px solid #b9c5ce;
+  background-color: #ffffff;
+  height: 30px;
+  font-weight: bold;
+}
+.x-blue-lith .xGrid-content .xGrid-row:nth-child(odd){
+  background-color: #f6f9fc;
+}
+
+.x-blue-lith .xGrid-Selected{
+  background: #2c8ac4 !important;
+  /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0086C9), color-stop(1, #006CA1) );*/
+  /*border-color:#014ab8;*/
+  color:#ffffff !important;
+  outline: 0;
+}
+
+/*****scrollbar*****/
+
+.x-blue-lith .xGrid-content::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Cor do indicador de rolagem */
+.x-blue-lith .xGrid-content::-webkit-scrollbar-thumb:vertical,
+.x-blue-lith .xGrid-content::-webkit-scrollbar-thumb:horizontal {
+  background: #d9e1e7;
+  border: 1px solid #bbccdd;
+  /*border-radius: 5px;*/
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+.x-blue-lith .xGrid-content::-webkit-scrollbar-thumb:vertical:hover,
+.x-blue-lith .xGrid-content::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #cdddec
+}
+

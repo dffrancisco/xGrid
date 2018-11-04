@@ -1,0 +1,62 @@
+/*--------------------x-table--------------------------------------*/
+.x-table{
+  color: #566579;
+  border: 1px solid #b9c5ce;
+  border-radius: 2px!important;
+  /*font-size: 10px;*/
+  font: normal 11px/150% Arial, Helvetica, sans-serif;
+}
+/* alinhamento do titulo*/
+.x-table .xGrid-title .xGrid-col span{
+  text-align: center;
+}
+
+/* color titulo */
+.x-table .xGrid-title{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;     
+  border-bottom: 1px solid #fff;
+  color: #747474;    
+  font-weight: bold;
+  background:#e0e0e0;
+
+}
+/* borda do titulo*/
+.x-table .xGrid-title .xGrid-col{
+  border-right: 1px solid #fff;
+  padding: 0!important;
+  font: normal 11px/150% Arial, Helvetica, sans-serif;
+
+}
+
+.x-table .xGrid-content{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #f6f9fc;
+}
+.x-table .xGrid-content .xGrid-col{
+  border-right: 1px solid #b9c5ce;
+}
+.x-table .xGrid-content .xGrid-row{
+  border-bottom: 1px solid #b9c5ce;
+  background-color: #ffffff;
+  height: 23px;
+  font-weight: bold;
+}
+.x-table .xGrid-content .xGrid-row:nth-child(odd){
+  background-color: #EEEEEE;
+}
+
+.x-table .xGrid-Selected{
+  /*background: #2c8ac4 !important;*/
+  /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0086C9), color-stop(1, #006CA1) );*/
+  /*border-color:#014ab8;*/
+  /*color:#ffffff !important;*/
+  outline: 0;
+}
+
+/*****scrollbar*****/
+
+.x-table .xGrid-content::-webkit-scrollbar {
+  width: 17px;
+}

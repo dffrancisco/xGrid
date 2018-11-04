@@ -1,0 +1,76 @@
+/* 
+    Created on : 20/11/2016, 20:49:40
+    Author     : alves
+*/
+
+/*--------------------x-darkBC--------------------------------------*/
+.x-darkBC{
+    color: #eceff1;
+    border-radius: 0px;
+}
+/* alinhamento do titulo*/
+.x-darkBC .xGrid-title .xGrid-col span{
+    text-align: center;
+}
+
+/* color titulo */
+.x-darkBC .xGrid-title{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;     
+    border-bottom: 1px solid #546e7a;
+    color: #b0bec5;    
+    background:#37474f;
+    font-size: 10px;
+}
+
+.x-darkBC .xGrid-title .xGrid-col{
+    border-right: 1px solid #455a64;
+}
+
+.x-darkBC .xGrid-content{
+    background: #455a64;
+
+}
+.x-darkBC .xGrid-content .xGrid-col{
+    border-right: 1px solid #546e7a;
+}
+.x-darkBC .xGrid-content .xGrid-row{
+    height: 30px;
+}
+.x-darkBC .xGrid-content .xGrid-row:nth-child(odd){
+    background-color: #495f69;
+}
+
+.x-darkBC .xGrid-Selected{
+      background: rgba(0, 161, 236, 0.20) !important;
+    box-shadow: 0 0 0 1px #00aeff inset;
+           outline: 0;
+
+}
+
+.x-darkBC .xGrid-SelectedFocusOut{
+    background: rgba(67, 175, 232, 0.2) !important;
+}
+
+/*****scrollbar*****/
+
+.x-darkBC .xGrid-content::-webkit-scrollbar {
+    width: 13px;
+}
+
+.x-darkBC .xGrid-main .xGrid-title{
+    padding-right: 13px;
+}
+
+/* Cor do indicador de rolagem */
+.x-darkBC .xGrid-content::-webkit-scrollbar-thumb:vertical,
+.x-darkBC .xGrid-content::-webkit-scrollbar-thumb:horizontal {
+    background: #37474f;
+    border: 1px solid #37474f;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+.x-darkBC .xGrid-content::-webkit-scrollbar-thumb:vertical:hover,
+.x-darkBC .xGrid-content::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #455a64
+}
